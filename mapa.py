@@ -33,5 +33,5 @@ locations = list(zip(df['seguridad.latitud'], df['seguridad.longitud']))
 cluster = plugins.MarkerCluster(locations=locations,                     
           popups=df["seguridad.nombre_barrio"].tolist())  
 m.add_child(cluster)
-m.save('mapa.html')
+m.save('index.html')
 # %%
